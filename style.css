@@ -1,14 +1,13 @@
-/* Setup & CSS Variables */
 :root {
     --primary: #5f259f;
     --primary-light: #7e45bc;
     --primary-dark: #41147a;
     --primary-glow: rgba(95, 37, 159, 0.4);
     
-    --secondary: #1ea366; /* Success green */
+    --secondary: #1ea366;
     --secondary-glow: rgba(30, 163, 102, 0.2);
     
-    --accent: #ff4c4c; /* Sale red */
+    --accent: #ff4c4c;
     
     --bg-color: #f0f2f5;
     --card-bg: rgba(255, 255, 255, 0.95);
@@ -18,7 +17,6 @@
     
     --border-color: rgba(229, 231, 235, 0.5);
     
-    /* Elegant soft shadows */
     --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -29,7 +27,7 @@
     --radius-lg: 20px;
     --radius-pill: 9999px;
     
-    /* Buttery smooth transitions */
+    
     --transition-fast: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
     --transition-smooth: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -43,7 +41,6 @@
 
 body {
     background-color: var(--bg-color);
-    /* Parallax Background Attachment with abstract gradients and tech dot-grid */
     background-image: 
         radial-gradient(circle at top right, var(--primary-glow) 0%, transparent 50%),
         radial-gradient(circle at bottom left, var(--secondary-glow) 0%, transparent 60%),
@@ -65,23 +62,18 @@ button {
     background: none;
 }
 
-/* Typography */
 h1, h2, h3, h4 { color: #111827; }
 h3 { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.3px; }
-
-/* Main Container Wrapper */
 main {
     max-width: 800px;
     margin: 0 auto;
-    padding: 90px 16px 60px; /* Top padding protects content from sticky nav */
+    padding: 90px 16px 60px;
 }
-
-/* Navbar */
 .navbar {
     position: fixed;
     top: 0; width: 100%;
-    background-color: rgba(95, 37, 159, 0.85); /* Semi-transparent */
-    backdrop-filter: blur(12px); /* Glassmorphism */
+    background-color: rgba(95, 37, 159, 0.85); 
+    backdrop-filter: blur(12px); 
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
@@ -170,7 +162,6 @@ main {
 
 .mobile-menu-btn:hover { transform: scale(1.1); }
 
-/* Mobile Dropdown */
 .mobile-menu {
     display: none;
     background-color: var(--primary-dark);
@@ -201,7 +192,6 @@ main {
     padding-left: 25px;
 }
 
-/* Generic Section Styles */
 .card-section, .hero-slider {
     background: var(--card-bg);
     backdrop-filter: blur(10px);
@@ -219,11 +209,10 @@ main {
 
 .card-section { padding: 24px; }
 
-/* Hero Section Slider */
 .hero-slider {
     position: relative;
     overflow: hidden;
-    padding: 0; /* Overflow naturally handles padding */
+    padding: 0;
 }
 
 .slider-track {
@@ -237,7 +226,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 30px 60px; /* Space for dots at the bottom */
+    padding: 40px 30px 60px;
     box-sizing: border-box;
 }
 
@@ -324,7 +313,6 @@ main {
     opacity: 1;
 }
 
-/* Card Section Headers */
 .section-header {
     display: flex;
     justify-content: space-between;
@@ -343,10 +331,9 @@ main {
 
 .btn-text:hover {
     color: var(--primary-light);
-    transform: translateX(3px); /* subtle right nudge */
+    transform: translateX(3px);
 }
 
-/* Services Grid */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
@@ -387,7 +374,6 @@ main {
     box-shadow: 0 6px 15px rgba(95, 37, 159, 0.2);
 }
 
-/* Specific icon override for quick transfers */
 .bg-purple {
     background: linear-gradient(135deg, var(--primary), var(--primary-light));
     color: white;
@@ -400,7 +386,6 @@ main {
     letter-spacing: -0.2px;
 }
 
-/* Ecommerce Product Grid */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -437,7 +422,7 @@ main {
 }
 
 .product-card:hover img {
-    transform: scale(1.08); /* Minimal zoom transition */
+    transform: scale(1.08);
 }
 
 .product-info { padding: 14px;}
@@ -475,12 +460,10 @@ main {
     box-shadow: 0 4px 10px rgba(95, 37, 159, 0.2);
 }
 
-/* Footer */
 .footer {
     background-color: white;
     padding: 50px 16px 30px;
     border-top: 1px solid var(--border-color);
-    /* Soft top gradient to blend nicely with parallax bg */
     background: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, #ffffff 20%);
     backdrop-filter: blur(10px);
 }
@@ -539,7 +522,6 @@ main {
     font-size: 0.9rem;
 }
 
-/* Responsive Breakpoints */
 @media (max-width: 768px) {
     .nav-links, .nav-actions .icon-btn { display: none; }
     .mobile-menu-btn { display: flex; align-items: center;}
@@ -574,7 +556,6 @@ main {
     .slide-content h2 { font-size: 1.6rem; }
 }
 
-/* Utilities for JS Interactivity */
 .hidden-item {
     display: none !important;
 }
@@ -590,7 +571,6 @@ main {
     }
 }
 
-/* About Section Styles */
 .about-content p {
     color: var(--text-muted);
     font-size: 0.95rem;
@@ -626,7 +606,6 @@ main {
     font-size: 0.85rem;
 }
 
-/* Contact Section Styles */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
