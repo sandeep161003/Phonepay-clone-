@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhonePe Style Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Ionicons for simple vector icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <ion-icon name="wallet"></ion-icon>
+                <span>PayStore</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Notifications"><ion-icon name="notifications-outline"></ion-icon></button>
+                <button class="icon-btn" aria-label="Profile"><ion-icon name="person-circle-outline"></ion-icon></button>
+                <button class="icon-btn mobile-menu-btn" aria-label="Menu"><ion-icon name="menu-outline"></ion-icon></button>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div class="mobile-menu">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Banner / Hero Section -->
+        <section id="home" class="hero-slider card-section">
+            <div class="slider-track" id="sliderTrack">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <h2>The Big App Sale!</h2>
+                        <p>Up to 50% Off on Top Electronics and Fashion.</p>
+                        <button class="btn-primary">Shop Now</button>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=600&q=80" alt="Sale Image">
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <h2>Pay Bills Instantly</h2>
+                        <p>Zero Convenience Fees on your first 3 utility payments.</p>
+                        <button class="btn-primary">Pay Bills</button>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80" alt="Payments Image">
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="slide-content">
+                        <h2>Premium Audio</h2>
+                        <p>Discover the latest drops in high-fidelity sound.</p>
+                        <button class="btn-primary">Explore</button>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Audio Image">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider Dots -->
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!-- Money Transfers / Top Services -->
+        <section id="services" class="card-section">
+            <div class="section-header">
+                <h3>Quick Transfers</h3>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon bg-purple"><ion-icon name="person"></ion-icon></div>
+                    <p>To Contact</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon bg-purple"><ion-icon name="business"></ion-icon></div>
+                    <p>To Account</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon bg-purple"><ion-icon name="sync"></ion-icon></div>
+                    <p>To Self</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon bg-purple"><ion-icon name="home"></ion-icon></div>
+                    <p>Check Balance</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recharge & Bill Payments -->
+        <section class="card-section">
+            <div class="section-header">
+                <h3>Recharge & Pay Bills</h3>
+                <button class="btn-text toggle-btn" data-target="recharge-grid">View All</button>
+            </div>
+            <div class="services-grid" id="recharge-grid">
+                <!-- Visible Items -->
+                <div class="service-item">
+                    <div class="service-icon"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+                    <p>Mobile Recharge</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><ion-icon name="tv-outline"></ion-icon></div>
+                    <p>DTH</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><ion-icon name="flash-outline"></ion-icon></div>
+                    <p>Electricity</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><ion-icon name="card-outline"></ion-icon></div>
+                    <p>Credit Card</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><ion-icon name="home-outline"></ion-icon></div>
+                    <p>Rent</p>
+                </div>
+                
+                <!-- Hidden Items -->
+                <div class="service-item hidden-item">
+                    <div class="service-icon"><ion-icon name="wifi-outline"></ion-icon></div>
+                    <p>Broadband</p>
+                </div>
+                <div class="service-item hidden-item">
+                    <div class="service-icon"><ion-icon name="flame-outline"></ion-icon></div>
+                    <p>Gas</p>
+                </div>
+                <div class="service-item hidden-item">
+                    <div class="service-icon"><ion-icon name="water-outline"></ion-icon></div>
+                    <p>Water</p>
+                </div>
+                <div class="service-item hidden-item">
+                    <div class="service-icon"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+                    <p>Insurance</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ecommerce Shop Section -->
+        <section id="shop" class="card-section">
+            <div class="section-header">
+                <h3>Store Built-In</h3>
+                <button class="btn-text toggle-btn" data-target="store-grid">View Store</button>
+            </div>
+            <div class="product-grid" id="store-grid">
+                <!-- Visible Products -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <h4>Premium Headphones</h4>
+                        <p class="price">₹12,999</p>
+                        <button class="btn-outline">Add</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=300&q=80" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <h4>Smart Watch V2</h4>
+                        <p class="price">₹4,599</p>
+                        <button class="btn-outline">Add</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300&q=80" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <h4>Running Sneakers</h4>
+                        <p class="price">₹2,999</p>
+                        <button class="btn-outline">Add</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=300&q=80" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <h4>Classic Camera</h4>
+                        <p class="price">₹34,999</p>
+                        <button class="btn-outline">Add</button>
+                    </div>
+                </div>
+
+                <!-- Hidden Products -->
+                <div class="product-card hidden-item">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=300&q=80" alt="Keyboard">
+                    </div>
+                    <div class="product-info">
+                        <h4>Mechanical Keyboard</h4>
+                        <p class="price">₹6,499</p>
+                        <button class="btn-outline">Add</button>
+                    </div>
+                </div>
+                <div class="product-card hidden-item">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd9f7736f90?auto=format&fit=crop&w=300&q=80" alt="Airbuds">
+                    </div>
+                    <div class="product-info">
+                        <h4>Wireless Earbuds</h4>
+                        <p class="price">₹3,999</p>
+                        <button class="btn-outline">Add</button>
+                    </div>
+                </div>
+                <div class="product-card hidden-item">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1572569438065-809e19662b21?auto=format&fit=crop&w=300&q=80" alt="Monitor">
+                    </div>
+                    <div class="product-info">
+                        <h4>4K HDR Monitor</h4>
+                        <p class="price">₹45,000</p>
+                        <button class="btn-outline">Add</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="card-section">
+            <div class="section-header">
+                <h3>About PayStore</h3>
+            </div>
+            <div class="about-content">
+                <p>PayStore is India's leading unified payments and shopping super app. We strive to provide a seamless, secure, and blazing fast experience for everyday utilities. Whether you are transferring funds to loved ones, paying off your bills, or shopping for premium tech gear, PayStore ensures a frictionless journey backed by state-of-the-art encryption technology.</p>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <h4>50M+</h4>
+                        <p>Users</p>
+                    </div>
+                    <div class="stat-box">
+                        <ion-icon name="shield-checkmark-outline"></ion-icon>
+                        <h4>100%</h4>
+                        <p>Secure</p>
+                    </div>
+                    <div class="stat-box">
+                        <ion-icon name="business-outline"></ion-icon>
+                        <h4>1M+</h4>
+                        <p>Merchants</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="card-section">
+            <div class="section-header">
+                <h3>Contact Us</h3>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p><ion-icon name="location-outline"></ion-icon> <strong>Address:</strong> 123 Tech Park, Bengaluru, Karnataka, 560001</p>
+                    <p><ion-icon name="mail-outline"></ion-icon> <strong>Email:</strong> support@paystore.example</p>
+                    <p><ion-icon name="call-outline"></ion-icon> <strong>Phone:</strong> 1800-123-4567</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <ion-icon name="wallet"></ion-icon>
+                    <span>PayStore</span>
+                </div>
+                <p>India's leading seamless unified payments & shopping app.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>General</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Grievance</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PayStore Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
